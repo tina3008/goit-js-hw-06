@@ -10,28 +10,19 @@ class StringBuilder{
         return this.#value
     }
 
-    padEnd(str){  
-        
-        return this.#value = this.#value.split()
-        .concat(str.split())
-        .join('') 
+    padEnd(str){                  
+        this.#value += str
                 
     }
 
-    padStart(str){
-      
-        return this.#value = str.split()
-        .concat(this.#value.split())
-        .join('') 
+    padStart(str){      
+        this.#value = str + this.#value
         
     }
     
-    padBoth(str){
-        
-        return this.#value = str.split()
-       .concat(this.#value.split(),str.split())
-       .join('')
-      
+    padBoth(str){        
+        this.#value = str + this.#value + str
+            
     }
 
 }
